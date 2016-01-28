@@ -54,4 +54,9 @@ export function Header (props) {
 export function Footer (props) {
   return <footer>{props.children}</footer>
 }
+
+export function Stack (props) {
+  const c = classNames('stack', props.className)
+  return <div className={c}>{props.children}</div>
+}
 /* eslint-enable react/prop-types */
