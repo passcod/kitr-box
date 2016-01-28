@@ -1,0 +1,33 @@
+.row
+  display: flex
+  justify-content: center
+
+  &.short .box .content
+    max-height: 20rem
+    overflow: auto
+
+  > header
+    margin: 1rem
+    padding: 1rem 2rem
+    border-bottom: 1px solid
+
+.stack
+  @extend .row
+  flex-direction: column
+  justify-content: flex-start
+
+.box
+  margin: 2rem
+  margin-left: 0
+  min-width: 25rem
+
+  > header, > footer, > .content
+    padding: 1rem
+
+  > header, > footer
+    h1, h2, h3, p
+      margin: 0
+
+  > footer
+    border-top: 1px solid
+
