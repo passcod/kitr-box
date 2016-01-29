@@ -11,6 +11,10 @@ export default function Box (props) {
   const headers = []
 
   Children.forEach(props.children, child => {
+    if (!child) {
+      return
+    }
+
     if (child.type === Header) {
       return headers.push(child)
     }
