@@ -10,7 +10,7 @@ export default function Box (props) {
   const footers = []
   const headers = []
 
-  Children.forEach(props.children, child => {
+  Children.forEach(props.children, (child) => {
     if (!child) {
       return
     }
